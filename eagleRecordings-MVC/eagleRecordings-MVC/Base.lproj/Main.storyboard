@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -48,11 +49,80 @@
                             <outlet property="delegate" destination="mZh-SB-hzV" id="OFy-Pv-rWX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="s0H-o0-cJd"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="s0H-o0-cJd">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="uD9-Hh-eIW">
+                                <connections>
+                                    <segue destination="KTG-iN-Glt" kind="push" id="2Xz-rp-U8H"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="organize" id="Mfm-Sw-Oki"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zvc-KZ-rxL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1335" y="-486"/>
+        </scene>
+        <!--Record View Controller-->
+        <scene sceneID="4xb-Er-fCk">
+            <objects>
+                <viewController id="KTG-iN-Glt" customClass="RecordViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Caa-Zm-TDz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4ol-5v-npP">
+                                <rect key="frame" x="0.0" y="290.5" width="375" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eagleRecordings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McW-nV-BJZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PID-YN-hN0">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Y6-8z-AbS">
+                                        <rect key="frame" x="0.0" y="100" width="375" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.76219347991536501" blue="0.10483932751936775" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                        <state key="normal" title="stop">
+                                            <color key="titleColor" red="1" green="0.18245134140317187" blue="0.10690758934864053" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="stopBtn:" destination="KTG-iN-Glt" eventType="touchUpInside" id="Hq6-p0-4eF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4Y6-8z-AbS" firstAttribute="height" secondItem="McW-nV-BJZ" secondAttribute="height" id="Lvr-n6-2BL"/>
+                                    <constraint firstItem="PID-YN-hN0" firstAttribute="height" secondItem="McW-nV-BJZ" secondAttribute="height" id="Mz2-5w-8IL"/>
+                                    <constraint firstAttribute="height" constant="150" id="s96-ww-RjX"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4ol-5v-npP" firstAttribute="centerY" secondItem="8gl-zd-vcs" secondAttribute="centerY" id="5dQ-L5-3xZ"/>
+                            <constraint firstItem="4ol-5v-npP" firstAttribute="centerX" secondItem="8gl-zd-vcs" secondAttribute="centerX" id="AJo-D3-7V6"/>
+                            <constraint firstItem="4ol-5v-npP" firstAttribute="width" secondItem="Caa-Zm-TDz" secondAttribute="width" id="DLN-1F-HVv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8gl-zd-vcs"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2BU-af-c2V"/>
+                    <connections>
+                        <outlet property="timeLabel" destination="PID-YN-hN0" id="PxS-Yq-TbC"/>
+                        <outlet property="titleLabel" destination="McW-nV-BJZ" id="Xsh-es-CpI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mqR-qK-9EQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2008" y="-483"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7CE-VI-0rg">

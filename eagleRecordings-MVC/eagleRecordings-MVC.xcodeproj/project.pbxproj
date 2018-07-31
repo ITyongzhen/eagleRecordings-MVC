@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		213F54A521103DA4001AC12B /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213F54A421103DA4001AC12B /* Recorder.swift */; };
+		213F54A7211044BB001AC12B /* Uitlities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213F54A6211044BB001AC12B /* Uitlities.swift */; };
+		21406EDE210EBD85000C8DE5 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21406EDD210EBD85000C8DE5 /* RecordViewController.swift */; };
 		21DDFD2E210B11090077ABD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DDFD2D210B11090077ABD8 /* AppDelegate.swift */; };
 		21DDFD30210B11090077ABD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DDFD2F210B11090077ABD8 /* ViewController.swift */; };
 		21DDFD33210B11090077ABD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21DDFD31210B11090077ABD8 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		213F54A421103DA4001AC12B /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
+		213F54A6211044BB001AC12B /* Uitlities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uitlities.swift; sourceTree = "<group>"; };
+		21406EDD210EBD85000C8DE5 /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		21DDFD2A210B11090077ABD8 /* eagleRecordings-MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eagleRecordings-MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21DDFD2D210B11090077ABD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21DDFD2F210B11090077ABD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +51,7 @@
 		21747E8A210B27AA00B6F84E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				213F54A421103DA4001AC12B /* Recorder.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -52,6 +59,7 @@
 		21747E8B210B27B200B6F84E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				21406EDD210EBD85000C8DE5 /* RecordViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -59,6 +67,7 @@
 		21747E8C210B27BB00B6F84E /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				213F54A6211044BB001AC12B /* Uitlities.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -167,8 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21406EDE210EBD85000C8DE5 /* RecordViewController.swift in Sources */,
 				21DDFD30210B11090077ABD8 /* ViewController.swift in Sources */,
 				21DDFD2E210B11090077ABD8 /* AppDelegate.swift in Sources */,
+				213F54A521103DA4001AC12B /* Recorder.swift in Sources */,
+				213F54A7211044BB001AC12B /* Uitlities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
