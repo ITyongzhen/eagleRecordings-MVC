@@ -14,9 +14,17 @@ class RecordViewController: UIViewController,AVAudioRecorderDelegate {
     @IBOutlet weak var timeLabel: UILabel!
     
     @IBOutlet weak var titleLabel: UILabel!
+    
+    var audioRecorder: Recorder()
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.yellow
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
