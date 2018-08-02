@@ -11,6 +11,7 @@
 		21406EDE210EBD85000C8DE5 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21406EDD210EBD85000C8DE5 /* RecordViewController.swift */; };
 		21A0BE4B2111A95500F89780 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A0BE4A2111A95500F89780 /* Recorder.swift */; };
 		21A0BE4D2111A96600F89780 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A0BE4C2111A96600F89780 /* Recording.swift */; };
+		21DA0C8121129E430097328E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DA0C8021129E430097328E /* Item.swift */; };
 		21DDFD2E210B11090077ABD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DDFD2D210B11090077ABD8 /* AppDelegate.swift */; };
 		21DDFD30210B11090077ABD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DDFD2F210B11090077ABD8 /* ViewController.swift */; };
 		21DDFD33210B11090077ABD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21DDFD31210B11090077ABD8 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		21406EDD210EBD85000C8DE5 /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		21A0BE4A2111A95500F89780 /* Recorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		21A0BE4C2111A96600F89780 /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		21DA0C8021129E430097328E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		21DDFD2A210B11090077ABD8 /* eagleRecordings-MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eagleRecordings-MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21DDFD2D210B11090077ABD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21DDFD2F210B11090077ABD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				21A0BE4C2111A96600F89780 /* Recording.swift */,
+				21DA0C8021129E430097328E /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				21A0BE4D2111A96600F89780 /* Recording.swift in Sources */,
 				21406EDE210EBD85000C8DE5 /* RecordViewController.swift in Sources */,
 				21DDFD30210B11090077ABD8 /* ViewController.swift in Sources */,
+				21DA0C8121129E430097328E /* Item.swift in Sources */,
 				21DDFD2E210B11090077ABD8 /* AppDelegate.swift in Sources */,
 				213F54A7211044BB001AC12B /* Uitlities.swift in Sources */,
 			);

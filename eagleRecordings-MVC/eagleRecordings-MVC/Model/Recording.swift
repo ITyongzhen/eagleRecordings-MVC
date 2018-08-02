@@ -8,5 +8,9 @@
 
 import Foundation
 class Recording: Item, Codable {
-    <#code#>
+    override init(name: String, uuid: UUID){
+        super.init(name: name, uuid: uuid)
+    }
+    
+    
 }
