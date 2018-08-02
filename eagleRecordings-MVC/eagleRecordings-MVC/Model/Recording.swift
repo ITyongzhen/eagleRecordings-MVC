@@ -12,5 +12,20 @@ class Recording: Item, Codable {
         super.init(name: name, uuid: uuid)
     }
     
+    enum RecordingKeys: CodingKey {
+        case name, uuid
+    }
+
+    required init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: RecordingKeys.self)
+        let name  = try c.decode(String.self, forKey: .name)
+        let uuid = try c.decode(UUID.self, forKey: .uuid)
+        super.init(name: name, uuid: uuid)
+    }
     
+    func encode(to encoder:Encoder) throws{
+        var c =  encoder.container(keyedBy: RecordingKeys.self)
+        try c.encode(name, forKey: .name)
+        try c.encode(uuid, forKey: .uuid)
+    }
 }
