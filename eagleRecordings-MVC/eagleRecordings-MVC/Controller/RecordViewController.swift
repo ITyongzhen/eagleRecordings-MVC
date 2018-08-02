@@ -17,11 +17,7 @@ class RecordViewController: UIViewController,AVAudioRecorderDelegate {
     
     var recording = Recording(name: "", uuid: UUID())
     var audioRecorder: Recorder?
-    
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.yellow

@@ -10,11 +10,27 @@ import Foundation
 class Item {
     let uuid: UUID
     private(set) var name: String
+    weak var store: Store?
+    weak var parent: Folder?{
+        didSet{
+            store = parent?.store
+        }
+    }
     
     init(name: String, uuid: UUID) {
         self.name = name
         self.uuid = uuid
+        self.store = nil
+    }
+    
+    func setName(_ newName: String)  {
+        name = newName
         
+    }
+    
+    func item(atUUIDPath path: ArraySlice<UUID>) -> Item? {
+        guard let first = path.first, first == uuid else{return nil}
+        return self
     }
     
 }
