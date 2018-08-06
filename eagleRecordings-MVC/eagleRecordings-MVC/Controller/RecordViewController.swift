@@ -17,13 +17,24 @@ class RecordViewController: UIViewController,AVAudioRecorderDelegate {
     
     var recording = Recording(name: "", uuid: UUID())
     var audioRecorder: Recorder?
-
+    var folder: Folder? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.yellow
         timeLabel.text = timeString(0)
     }
     override func viewWillAppear(_ animated: Bool) {
+        audioRecorder = folder?.store?.fileUrl(for: recording).flatMap{ url in
+            Recorder(url: url){ time in
+                if let t = time {
+                    self.timeLabel.text = timeString(t)
+                } else {
+                    self.dismiss(animated: true)
+                }
+            }
+        }
+        
         
     }
     required init?(coder aDecoder: NSCoder) {

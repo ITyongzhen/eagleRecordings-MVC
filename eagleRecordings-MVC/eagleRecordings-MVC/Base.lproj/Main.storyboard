@@ -29,7 +29,7 @@
         <!--Root View Controller-->
         <scene sceneID="q89-wx-Nnk">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="mZh-SB-hzV" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="mZh-SB-hzV" customClass="FolderViewController" customModule="eagleRecordings_MVC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rAe-kP-9JE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,12 +53,19 @@
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="uD9-Hh-eIW">
                                 <connections>
-                                    <segue destination="KTG-iN-Glt" kind="push" id="2Xz-rp-U8H"/>
+                                    <action selector="createNewRecoder:" destination="mZh-SB-hzV" id="JX6-j2-jvB"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem systemItem="organize" id="Mfm-Sw-Oki"/>
+                            <barButtonItem systemItem="organize" id="Mfm-Sw-Oki">
+                                <connections>
+                                    <action selector="createNewFolder:" destination="mZh-SB-hzV" id="Xex-jr-Vxv"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <segue destination="KTG-iN-Glt" kind="show" identifier="showRecorder" id="Jvf-Un-RgA"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zvc-KZ-rxL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,7 +74,7 @@
         <!--Record View Controller-->
         <scene sceneID="4xb-Er-fCk">
             <objects>
-                <viewController id="KTG-iN-Glt" customClass="RecordViewController" sceneMemberID="viewController">
+                <viewController id="KTG-iN-Glt" customClass="RecordViewController" customModule="eagleRecordings_MVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Caa-Zm-TDz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

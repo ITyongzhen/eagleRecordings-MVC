@@ -14,6 +14,7 @@
 		21DA0C8121129E430097328E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DA0C8021129E430097328E /* Item.swift */; };
 		21DA0C832112F1920097328E /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DA0C822112F1920097328E /* Folder.swift */; };
 		21DA0C852112F5800097328E /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DA0C842112F5800097328E /* Store.swift */; };
+		21DA0CF021143B400097328E /* FolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DA0CEF21143B400097328E /* FolderViewController.swift */; };
 		21DDFD2E210B11090077ABD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DDFD2D210B11090077ABD8 /* AppDelegate.swift */; };
 		21DDFD30210B11090077ABD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DDFD2F210B11090077ABD8 /* ViewController.swift */; };
 		21DDFD33210B11090077ABD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21DDFD31210B11090077ABD8 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		21DA0C8021129E430097328E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		21DA0C822112F1920097328E /* Folder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
 		21DA0C842112F5800097328E /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		21DA0CEF21143B400097328E /* FolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewController.swift; sourceTree = "<group>"; };
 		21DDFD2A210B11090077ABD8 /* eagleRecordings-MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eagleRecordings-MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21DDFD2D210B11090077ABD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21DDFD2F210B11090077ABD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				21406EDD210EBD85000C8DE5 /* RecordViewController.swift */,
+				21DA0CEF21143B400097328E /* FolderViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				21DA0C852112F5800097328E /* Store.swift in Sources */,
 				21DA0C832112F1920097328E /* Folder.swift in Sources */,
 				21DDFD30210B11090077ABD8 /* ViewController.swift in Sources */,
+				21DA0CF021143B400097328E /* FolderViewController.swift in Sources */,
 				21DA0C8121129E430097328E /* Item.swift in Sources */,
 				21DDFD2E210B11090077ABD8 /* AppDelegate.swift in Sources */,
 				213F54A7211044BB001AC12B /* Uitlities.swift in Sources */,
