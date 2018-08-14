@@ -21,7 +21,21 @@ private let formatter: DateComponentsFormatter = {
 func timeString(_ time: TimeInterval) -> String {
     return formatter.string(from: time)!
 }
-
+extension UIViewController{
+    func modalTextAlert(title: String, accept: String = .ok, cancel: String = .cancel, placeHolder: String, callBack: @escaping (String?) -> ()) {
+        let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: cancel, style: .cancel) { _ in
+            callBack(nil)
+        })
+        
+        alert .addAction(UIAlertAction(title: accept, style: .default){ _ in
+            callBack(alert.textFields?.first?.text)
+        })
+        present(alert, animated: true)
+        
+    }
+}
 fileprivate extension String{
     
     static let ok = NSLocalizedString("OK", comment: "")
