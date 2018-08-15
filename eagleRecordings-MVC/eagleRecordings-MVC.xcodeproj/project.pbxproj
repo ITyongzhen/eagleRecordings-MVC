@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		212D35AC212427FB0052FE1D /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212D35AB212427FB0052FE1D /* PlayViewController.swift */; };
 		213F54A7211044BB001AC12B /* Uitlities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213F54A6211044BB001AC12B /* Uitlities.swift */; };
 		21406EDE210EBD85000C8DE5 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21406EDD210EBD85000C8DE5 /* RecordViewController.swift */; };
 		21A0BE4B2111A95500F89780 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A0BE4A2111A95500F89780 /* Recorder.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		212D35AB212427FB0052FE1D /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		213F54A6211044BB001AC12B /* Uitlities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uitlities.swift; sourceTree = "<group>"; };
 		21406EDD210EBD85000C8DE5 /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		21A0BE4A2111A95500F89780 /* Recorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			children = (
 				21406EDD210EBD85000C8DE5 /* RecordViewController.swift */,
 				21DA0CEF21143B400097328E /* FolderViewController.swift */,
+				212D35AB212427FB0052FE1D /* PlayViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				21A0BE4D2111A96600F89780 /* Recording.swift in Sources */,
 				21406EDE210EBD85000C8DE5 /* RecordViewController.swift in Sources */,
 				21DA0C852112F5800097328E /* Store.swift in Sources */,
+				212D35AC212427FB0052FE1D /* PlayViewController.swift in Sources */,
 				21DA0C832112F1920097328E /* Folder.swift in Sources */,
 				21DDFD30210B11090077ABD8 /* ViewController.swift in Sources */,
 				21DA0CF021143B400097328E /* FolderViewController.swift in Sources */,

@@ -9,13 +9,28 @@
 import Foundation
 import UIKit
 class FolderViewController: UITableViewController {
-    
+    var folder: Folder = Store.shared.rootFolder{
+        didSet {
+            tableView.reloadData()
+            if folder === folder.store?.rootFolder {
+                title = .recordings
+            } else {
+                title = folder.name
+            }
+        }
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.leftItemsSupplementBackButton = false
         navigationItem.leftBarButtonItem = editButtonItem
     }
-    
+    var selectedItem: Item? {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            return folder.contents[indexPath.row]
+        }
+        return nil
+    }
     
     @IBAction func createNewFolder(_ sender: Any) {
         
@@ -23,6 +38,29 @@ class FolderViewController: UITableViewController {
     
     @IBAction func createNewRecoder(_ sender: Any) {
         performSegue(withIdentifier: .showRecorder, sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else { return }
+        if identifier == .showFolder {
+            guard
+                let folderVC = segue.destination as? FolderViewController,
+                let selectedFolder = selectedItem as? Folder
+                else { fatalError() }
+            folderVC.folder = selectedFolder
+        }
+        else if identifier == .showRecorder {
+            guard let recordVC = segue.destination as? RecordViewController else { fatalError() }
+            recordVC.folder = folder
+        } else if identifier == .showPlayer {
+            guard
+                let playVC = (segue.destination as? UINavigationController)?.topViewController as? PlayViewController,
+                let recording = selectedItem as? Recording
+                else { fatalError() }
+            playVC.recording = recording
+            if let indexPath = tableView.indexPathForSelectedRow {
+                tableView.deselectRow(at: indexPath, animated: true)
+            }
+        }
     }
 }
 fileprivate extension String {

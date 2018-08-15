@@ -20,7 +20,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "eagleRecordings-MVC/Controller/RecordViewController.swift"
-            timestampString = "554979371.406999"
+            timestampString = "555907442.548218"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -36,7 +36,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "eagleRecordings-MVC/Controller/RecordViewController.swift"
-            timestampString = "554979593.380919"
+            timestampString = "555907442.5575041"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
@@ -52,7 +52,7 @@
                   moduleName = "eagleRecordings-MVC"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yinyongzhen/Documents/RL/fun/%E5%85%AB%E4%B8%AD%E6%9E%B6%E6%9E%84/test/%E5%BD%95%E9%9F%B3%E5%99%A8%E4%B9%8B--MVC/eagleRecordings-MVC/eagleRecordings-MVC/Controller/RecordViewController.swift"
-                  timestampString = "554979593.391093"
+                  timestampString = "555907444.971175"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "28"
@@ -67,7 +67,7 @@
                   moduleName = "eagleRecordings-MVC"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yinyongzhen/Documents/RL/fun/%E5%85%AB%E4%B8%AD%E6%9E%B6%E6%9E%84/test/%E5%BD%95%E9%9F%B3%E5%99%A8%E4%B9%8B--MVC/eagleRecordings-MVC/eagleRecordings-MVC/Controller/RecordViewController.swift"
-                  timestampString = "554979593.393486"
+                  timestampString = "555907444.975783"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
@@ -75,6 +75,54 @@
                   offsetFromSymbolStart = "18">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eagleRecordings-MVC/Controller/FolderViewController.swift"
+            timestampString = "555907426.58399"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "folder"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eagleRecordings-MVC/Controller/FolderViewController.swift"
+            timestampString = "555907431.162569"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eagleRecordings-MVC/Controller/FolderViewController.swift"
+            timestampString = "555907772.339204"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "selectedItem"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
