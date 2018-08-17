@@ -12,6 +12,7 @@
 		21406EDE210EBD85000C8DE5 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21406EDD210EBD85000C8DE5 /* RecordViewController.swift */; };
 		21A0BE4B2111A95500F89780 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A0BE4A2111A95500F89780 /* Recorder.swift */; };
 		21A0BE4D2111A96600F89780 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A0BE4C2111A96600F89780 /* Recording.swift */; };
+		21B4FE7E2126C35600BAF423 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4FE7D2126C35500BAF423 /* Player.swift */; };
 		21DA0C8121129E430097328E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DA0C8021129E430097328E /* Item.swift */; };
 		21DA0C832112F1920097328E /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DA0C822112F1920097328E /* Folder.swift */; };
 		21DA0C852112F5800097328E /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DA0C842112F5800097328E /* Store.swift */; };
@@ -29,6 +30,7 @@
 		21406EDD210EBD85000C8DE5 /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		21A0BE4A2111A95500F89780 /* Recorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		21A0BE4C2111A96600F89780 /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		21B4FE7D2126C35500BAF423 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		21DA0C8021129E430097328E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		21DA0C822112F1920097328E /* Folder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
 		21DA0C842112F5800097328E /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				213F54A6211044BB001AC12B /* Uitlities.swift */,
 				21A0BE4A2111A95500F89780 /* Recorder.swift */,
+				21B4FE7D2126C35500BAF423 /* Player.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				21A0BE4D2111A96600F89780 /* Recording.swift in Sources */,
 				21406EDE210EBD85000C8DE5 /* RecordViewController.swift in Sources */,
 				21DA0C852112F5800097328E /* Store.swift in Sources */,
+				21B4FE7E2126C35600BAF423 /* Player.swift in Sources */,
 				212D35AC212427FB0052FE1D /* PlayViewController.swift in Sources */,
 				21DA0C832112F1920097328E /* Folder.swift in Sources */,
 				21DDFD30210B11090077ABD8 /* ViewController.swift in Sources */,
