@@ -54,8 +54,7 @@
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="uD9-Hh-eIW">
                                 <connections>
-                                    <action selector="createNewRecoder:" destination="mZh-SB-hzV" id="NGa-Ca-y7g"/>
-                                    <segue destination="KTG-iN-Glt" kind="show" identifier="showRecorder" id="22q-ss-clN"/>
+                                    <segue destination="KTG-iN-Glt" kind="show" identifier="showRecorder" id="WnE-YQ-OsZ"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem systemItem="organize" id="Mfm-Sw-Oki">

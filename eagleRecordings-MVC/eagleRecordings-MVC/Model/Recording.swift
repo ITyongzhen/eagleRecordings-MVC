@@ -15,7 +15,9 @@ class Recording: Item, Codable {
     enum RecordingKeys: CodingKey {
         case name, uuid
     }
-
+    var fileURL: URL? {
+        return store?.fileUrl(for: self)
+    }
     required init(from decoder: Decoder) throws {
         let c = try decoder.container(keyedBy: RecordingKeys.self)
         let name  = try c.decode(String.self, forKey: .name)

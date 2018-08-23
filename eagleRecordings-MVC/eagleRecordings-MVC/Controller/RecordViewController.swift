@@ -24,7 +24,8 @@ class RecordViewController: UIViewController,AVAudioRecorderDelegate {
         view.backgroundColor = UIColor.yellow
         timeLabel.text = timeString(0)
     }
-    override func viewWillAppear(_ animated: Bool) {
+    
+    override func viewDidAppear(_ animated: Bool) {
         audioRecorder = folder?.store?.fileUrl(for: recording).flatMap{ url in
             Recorder(url: url){ time in
                 if let t = time {
@@ -37,8 +38,11 @@ class RecordViewController: UIViewController,AVAudioRecorderDelegate {
         
         
     }
+    
+
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+          super.init(coder: aDecoder)
+//        fatalError("init(coder:) has not been implemented")
     }
     @IBAction func stopBtn(_ sender: UIButton) {
         

@@ -36,9 +36,9 @@ class FolderViewController: UITableViewController {
         
     }
     
-    @IBAction func createNewRecoder(_ sender: Any) {
-        performSegue(withIdentifier: .showRecorder, sender: self)
-    }
+//    @IBAction func createNewRecoder(_ sender: Any) {
+//        performSegue(withIdentifier: .showRecorder, sender: self)
+//    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifier = segue.identifier else { return }
         if identifier == .showFolder {
