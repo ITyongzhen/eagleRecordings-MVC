@@ -87,4 +87,16 @@ class Folder: Item, Codable {
 
     }
     
+    func add() {
+        
+    }
+    func reSort(chageItem: Item ) -> (oldItem: Int, newItem: Int) {
+        let oldIndex = contents.index { $0 === chageItem }!
+        contents.sort(by: { $0.name < $1.name})
+        let newIndex = contents.index { $0 === chageItem }!
+        return (oldIndex, newIndex)
+        
+        
+    }
+    
 }

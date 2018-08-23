@@ -24,10 +24,19 @@ class Item {
     }
     
     func setName(_ newName: String)  {
+        print("setName = %@",newName)
         name = newName
+        if let p = parent {
+            let (oldIndex, newIndex) = p.reSort(chageItem: self)
+            
+            
+        }
+        
         
     }
-    
+    func deleted() {
+        print("deleted ")
+    }
     func item(atUUIDPath path: ArraySlice<UUID>) -> Item? {
         guard let first = path.first, first == uuid else{return nil}
         return self

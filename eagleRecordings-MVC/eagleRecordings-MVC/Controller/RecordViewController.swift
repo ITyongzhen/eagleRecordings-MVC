@@ -45,12 +45,24 @@ class RecordViewController: UIViewController,AVAudioRecorderDelegate {
 //        fatalError("init(coder:) has not been implemented")
     }
     @IBAction func stopBtn(_ sender: UIButton) {
-        
-        
+        audioRecorder?.stop()
+        modalTextAlert(title: .saveRecording, accept: .save, cancel: "", placeHolder: .nameForRecording) { string in
+            if let title = string{
+                self.recording.setName(title)
+                self.folder?.add()
+            }else{
+                self.recording.deleted()
+            }
+            self.dismiss(animated: true, completion: nil)
+            
+        }
+
     }
     
-
     
-    
-    
+}
+fileprivate extension String {
+    static let saveRecording = NSLocalizedString("Save recording", comment: "Heading for audio recording save dialog")
+    static let save = NSLocalizedString("Save", comment: "Confirm button text for audio recoding save dialog")
+    static let nameForRecording = NSLocalizedString("Name for recording", comment: "Placeholder for audio recording name text field")
 }

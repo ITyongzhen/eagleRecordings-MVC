@@ -9,6 +9,7 @@
 import Foundation
 
 final class Store {
+    static let changedNotification = Notification.Name("StoreChanged")
     static private let documentDirectory = try! FileManager.default.url(for: .libraryDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
     static let shared = Store(url: documentDirectory)
     private(set) var rootFolder: Folder
@@ -38,6 +39,14 @@ final class Store {
 
     }
     
+    func save(_ notifying: Item, userInfo: [AnyHashable: Any]) {
+        if let url = baseUrl, let data = try? JSONEncoder().encode(rootFolder) {
+            try! data.write(to: url.appendingPathComponent(.storeLocation))
+            
+        }
+        NotificationCenter.default.post(name: Store.changedNotification, object: notifying, userInfo: userInfo)
+        
+    }
     
 }
 fileprivate extension String{
