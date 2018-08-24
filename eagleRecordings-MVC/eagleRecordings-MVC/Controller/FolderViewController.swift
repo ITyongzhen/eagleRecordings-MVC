@@ -24,6 +24,16 @@ class FolderViewController: UITableViewController {
         super.viewDidLoad()
         navigationItem.leftItemsSupplementBackButton = false
         navigationItem.leftBarButtonItem = editButtonItem
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(handleChangeNotification(_:)), name: Store.changedNotification, object: nil)
+        
+    }
+    
+    @objc func handleChangeNotification(_ notification: NSNotification) {
+        if let item = notification.object as? Folder,item === folder {
+            
+        }
+        
     }
     var selectedItem: Item? {
         if let indexPath = tableView.indexPathForSelectedRow {
