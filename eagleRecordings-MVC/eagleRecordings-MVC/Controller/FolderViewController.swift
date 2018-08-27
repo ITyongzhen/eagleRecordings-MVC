@@ -31,8 +31,38 @@ class FolderViewController: UITableViewController {
     
     @objc func handleChangeNotification(_ notification: NSNotification) {
         if let item = notification.object as? Folder,item === folder {
-            
+            let reason = notification.userInfo?[Item.changeReasonKey] as? String
+            if reason == Item.removed, let nc = navigationController{
+                nc.setViewControllers(nc.viewControllers.filter{ $0 != self}, animated: false)
+            }else{
+                folder = item
+            }
         }
+        
+        guard let userInfo = notification.userInfo, userInfo[Item.parentFolderKey] as? Folder === folder else { return  }
+        
+        if let chageReason = userInfo[Item.changeReasonKey] as? String {
+            let oldValue = userInfo[Item.newValueKey]
+            let newValue = userInfo[Item.oldValueKey]
+            switch(chageReason, newValue, oldValue){
+            case let (Item.removed, _, (oldValue as Int)?):
+                tableView.deleteRows(at: [IndexPath(row: oldValue, section: 0)], with: .right)
+                
+            case let (Item.added, (newValue as Int)?, _):
+                tableView.insertRows(at: [IndexPath(row: newValue, section: 0) ], with: .left)
+                
+            case let (Item.renamed, (newValue as Int)?, (oldValue as Int)?):
+                tableView.insertRows(at: [IndexPath(row: newValue, section: 0) ], with: .left)
+                tableView.moveRow(at: IndexPath(row: oldValue, section: 0), to: IndexPath(row: newValue, section: 0))
+                tableView.reloadRows(at: [IndexPath(row: newValue, section: 0)], with: .fade)
+                
+            default:tableView.reloadData()
+            }
+            
+        }else{
+            tableView.reloadData()
+        }
+        
         
     }
     var selectedItem: Item? {
@@ -72,6 +102,23 @@ class FolderViewController: UITableViewController {
             }
         }
     }
+    
+    // tableview
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return folder.contents.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let item = folder.contents[indexPath.row]
+        let identifier = item is Recording ? "RecordingCell" : "FolderCell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+        cell.textLabel!.text = "\((item is Recording) ? "🔊" : "📁")  \(item.name)"
+        return cell
+    }
+    
 }
 fileprivate extension String {
     static let uuidPathKey = "uuidPath"

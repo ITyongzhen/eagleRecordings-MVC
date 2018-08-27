@@ -100,7 +100,7 @@ class Folder: Item, Codable {
         assert(contents.contains{ $0 === item} == false)
         contents.append(item)
         contents.sort(by: { $0.name < $1.name })
-        let newIndex = contents.index{ $0 === item }
+        let newIndex = contents.index{ $0 === item }!
         item.parent = self
         store?.save(item, userInfo: [Item.changeReasonKey: Item.added, Item.newValueKey: newIndex, Item.parentFolderKey: self])
     }
@@ -116,7 +116,12 @@ class Folder: Item, Codable {
         guard let index = contents.index(where: { $0 === item}) else { return }
         item.deleted()
         contents.remove(at: index)
-        
+        store?.save(item, userInfo: [
+            Item.changeReasonKey: Item.removed,
+            Item.oldValueKey: index,
+            Item.parentFolderKey: self
+            
+            ])
     }
     
     
