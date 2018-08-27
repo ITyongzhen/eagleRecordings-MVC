@@ -36,6 +36,7 @@ class Item {
     }
     func deleted() {
         print("deleted ")
+        parent = nil
     }
     func item(atUUIDPath path: ArraySlice<UUID>) -> Item? {
         guard let first = path.first, first == uuid else{return nil}

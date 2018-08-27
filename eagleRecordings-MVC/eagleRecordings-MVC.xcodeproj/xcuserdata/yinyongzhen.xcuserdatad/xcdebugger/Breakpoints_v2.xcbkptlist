@@ -19,78 +19,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "eagleRecordings-MVC/Controller/RecordViewController.swift"
-            timestampString = "556687328.5411251"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "eagleRecordings-MVC/Controller/RecordViewController.swift"
-            timestampString = "556687328.541243"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "eagleRecordings_MVC.RecordViewController.viewDidAppear(Swift.Bool) -&gt; ()"
-                  moduleName = "eagleRecordings-MVC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yinyongzhen/Documents/RL/fun/%E5%85%AB%E4%B8%AD%E6%9E%B6%E6%9E%84/test/%E5%BD%95%E9%9F%B3%E5%99%A8%E4%B9%8B--MVC/eagleRecordings-MVC/eagleRecordings-MVC/Controller/RecordViewController.swift"
-                  timestampString = "556687328.7403491"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "39">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Foundation.URL) -&gt; Swift.Optional&lt;eagleRecordings_MVC.Recorder&gt; in eagleRecordings_MVC.RecordViewController.viewDidAppear(Swift.Bool) -&gt; ()"
-                  moduleName = "eagleRecordings-MVC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yinyongzhen/Documents/RL/fun/%E5%85%AB%E4%B8%AD%E6%9E%B6%E6%9E%84/test/%E5%BD%95%E9%9F%B3%E5%99%A8%E4%B9%8B--MVC/eagleRecordings-MVC/eagleRecordings-MVC/Controller/RecordViewController.swift"
-                  timestampString = "556687328.742699"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "18">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "eagleRecordings-MVC/Controller/FolderViewController.swift"
-            timestampString = "556687328.5413049"
+            timestampString = "557031166.574488"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
             endingLineNumber = "21"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "folder"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -100,61 +36,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "eagleRecordings-MVC/Controller/FolderViewController.swift"
-            timestampString = "556687328.541371"
+            timestampString = "557031166.577816"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
             endingLineNumber = "28"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "eagleRecordings-MVC/Controller/RecordViewController.swift"
-            timestampString = "556687328.5414259"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "viewDidAppear(_:)"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Foundation.URL) -&gt; Swift.Optional&lt;eagleRecordings_MVC.Recorder&gt; in eagleRecordings_MVC.RecordViewController.viewDidAppear(Swift.Bool) -&gt; ()"
-                  moduleName = "eagleRecordings-MVC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yinyongzhen/Documents/RL/fun/%E5%85%AB%E4%B8%AD%E6%9E%B6%E6%9E%84/test/%E5%BD%95%E9%9F%B3%E5%99%A8%E4%B9%8B--MVC/eagleRecordings-MVC/eagleRecordings-MVC/Controller/RecordViewController.swift"
-                  timestampString = "556687328.7560101"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "18">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Double&gt;) -&gt; () in closure #1 (Foundation.URL) -&gt; Swift.Optional&lt;eagleRecordings_MVC.Recorder&gt; in eagleRecordings_MVC.RecordViewController.viewDidAppear(Swift.Bool) -&gt; ()"
-                  moduleName = "eagleRecordings-MVC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yinyongzhen/Documents/RL/fun/%E5%85%AB%E4%B8%AD%E6%9E%B6%E6%9E%84/test/%E5%BD%95%E9%9F%B3%E5%99%A8%E4%B9%8B--MVC/eagleRecordings-MVC/eagleRecordings-MVC/Controller/RecordViewController.swift"
-                  timestampString = "556687328.758042"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "35">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -195,78 +83,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "eagleRecordings-MVC/Helper/Recorder.swift"
-            timestampString = "556684795.331215"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "start(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "eagleRecordings-MVC/Model/Store.swift"
-            timestampString = "556687328.541593"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "fileUrl(for:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "eagleRecordings-MVC/Model/Store.swift"
-            timestampString = "556687328.541646"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "init(url:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "eagleRecordings-MVC/Controller/FolderViewController.swift"
-            timestampString = "556687328.541695"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "eagleRecordings-MVC/Controller/FolderViewController.swift"
-            timestampString = "556687328.541742"
+            timestampString = "557031166.581827"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
             endingLineNumber = "44"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "FolderViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -276,29 +100,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "eagleRecordings-MVC/Controller/FolderViewController.swift"
-            timestampString = "556687328.54179"
+            timestampString = "557031166.582994"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
             endingLineNumber = "43"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "eagleRecordings-MVC/Helper/Recorder.swift"
-            timestampString = "556687629.859206"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "stop()"
-            landmarkType = "7">
+            landmarkName = "selectedItem"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -308,7 +116,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "eagleRecordings-MVC/Controller/RecordViewController.swift"
-            timestampString = "556699648.240332"
+            timestampString = "557032715.587752"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
@@ -346,6 +154,70 @@
             startingLineNumber = "47"
             endingLineNumber = "47"
             landmarkName = "save(_:userInfo:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eagleRecordings-MVC/Controller/FolderViewController.swift"
+            timestampString = "557031166.584829"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "handleChangeNotification(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eagleRecordings-MVC/Controller/RecordViewController.swift"
+            timestampString = "557032715.587988"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "stopBtn(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eagleRecordings-MVC/Controller/RecordViewController.swift"
+            timestampString = "557032715.588101"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "stopBtn(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eagleRecordings-MVC/Model/Folder.swift"
+            timestampString = "557033441.422003"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "deleted()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

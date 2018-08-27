@@ -87,8 +87,22 @@ class Folder: Item, Codable {
 
     }
     
-    func add() {
+    override func deleted() {
+        for item in contents {
+            remove(item)
+        }
         
+            super.deleted()
+        
+    }
+    
+    func add(_ item: Item) {
+        assert(contents.contains{ $0 === item} == false)
+        contents.append(item)
+        contents.sort(by: { $0.name < $1.name })
+        let newIndex = contents.index{ $0 === item }
+        item.parent = self
+        store?.save(item, userInfo: [Item.changeReasonKey: Item.added, Item.newValueKey: newIndex, Item.parentFolderKey: self])
     }
     func reSort(chageItem: Item ) -> (oldItem: Int, newItem: Int) {
         let oldIndex = contents.index { $0 === chageItem }!
@@ -98,5 +112,12 @@ class Folder: Item, Codable {
         
         
     }
+     func remove(_ item: Item){
+        guard let index = contents.index(where: { $0 === item}) else { return }
+        item.deleted()
+        contents.remove(at: index)
+        
+    }
+    
     
 }

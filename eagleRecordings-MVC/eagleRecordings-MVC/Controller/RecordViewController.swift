@@ -46,10 +46,10 @@ class RecordViewController: UIViewController,AVAudioRecorderDelegate {
     }
     @IBAction func stopBtn(_ sender: UIButton) {
         audioRecorder?.stop()
-        modalTextAlert(title: .saveRecording, accept: .save, cancel: "", placeHolder: .nameForRecording) { string in
+        modalTextAlert(title: .saveRecording, accept: .save, cancel: "cancel", placeHolder: .nameForRecording) { string in
             if let title = string{
                 self.recording.setName(title)
-                self.folder?.add()
+                self.folder?.add(self.recording)
             }else{
                 self.recording.deleted()
             }

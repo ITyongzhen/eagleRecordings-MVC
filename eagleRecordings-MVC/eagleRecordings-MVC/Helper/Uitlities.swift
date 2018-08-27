@@ -24,7 +24,7 @@ func timeString(_ time: TimeInterval) -> String {
 extension UIViewController{
     func modalTextAlert(title: String, accept: String = .ok, cancel: String = .cancel, placeHolder: String, callBack: @escaping (String?) -> ()) {
         let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
-        
+        alert.addTextField{ $0.placeholder = placeHolder }
         alert.addAction(UIAlertAction(title: cancel, style: .cancel) { _ in
             callBack(nil)
         })
