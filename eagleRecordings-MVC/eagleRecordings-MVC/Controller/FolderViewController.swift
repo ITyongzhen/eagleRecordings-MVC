@@ -52,7 +52,6 @@ class FolderViewController: UITableViewController {
                 tableView.insertRows(at: [IndexPath(row: newValue, section: 0) ], with: .left)
                 
             case let (Item.renamed, (newValue as Int)?, (oldValue as Int)?):
-                tableView.insertRows(at: [IndexPath(row: newValue, section: 0) ], with: .left)
                 tableView.moveRow(at: IndexPath(row: oldValue, section: 0), to: IndexPath(row: newValue, section: 0))
                 tableView.reloadRows(at: [IndexPath(row: newValue, section: 0)], with: .fade)
                 

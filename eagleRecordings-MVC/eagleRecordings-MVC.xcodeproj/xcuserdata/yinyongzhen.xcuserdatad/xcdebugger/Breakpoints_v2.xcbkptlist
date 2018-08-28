@@ -20,45 +20,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "eagleRecordings-MVC/Controller/FolderViewController.swift"
-            timestampString = "557057573.953151"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "folder"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "eagleRecordings-MVC/Controller/FolderViewController.swift"
-            timestampString = "557057573.953328"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "eagleRecordings-MVC/Controller/FolderViewController.swift"
-            timestampString = "557057573.953432"
+            timestampString = "557116476.802267"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "74"
             endingLineNumber = "74"
-            landmarkName = "FolderViewController"
-            landmarkType = "3">
+            landmarkName = "createNewFolder(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -67,14 +35,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "eagleRecordings-MVC/Controller/FolderViewController.swift"
-            timestampString = "557057573.953555"
+            filePath = "eagleRecordings-MVC/Controller/RecordViewController.swift"
+            timestampString = "557116476.802927"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "selectedItem"
-            landmarkType = "24">
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "stopBtn(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -83,13 +51,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "eagleRecordings-MVC/Controller/FolderViewController.swift"
-            timestampString = "557057573.953831"
+            filePath = "eagleRecordings-MVC/Controller/RecordViewController.swift"
+            timestampString = "557116476.803026"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "handleChangeNotification(_:)"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "stopBtn(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -100,45 +68,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "eagleRecordings-MVC/Controller/FolderViewController.swift"
-            timestampString = "557057573.954741"
+            timestampString = "557116476.80311"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "handleChangeNotification(_:)"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "eagleRecordings_MVC.FolderViewController.handleChangeNotification(__ObjC.NSNotification) -&gt; ()"
-                  moduleName = "eagleRecordings-MVC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yinyongzhen/Documents/RL/fun/%E5%85%AB%E4%B8%AD%E6%9E%B6%E6%9E%84/test/%E5%BD%95%E9%9F%B3%E5%99%A8%E4%B9%8B--MVC/eagleRecordings-MVC/eagleRecordings-MVC/Controller/FolderViewController.swift"
-                  timestampString = "557057574.139313"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "4339">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "eagleRecordings_MVC.FolderViewController.handleChangeNotification(__ObjC.NSNotification) -&gt; ()"
-                  moduleName = "eagleRecordings-MVC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yinyongzhen/Documents/RL/fun/%E5%85%AB%E4%B8%AD%E6%9E%B6%E6%9E%84/test/%E5%BD%95%E9%9F%B3%E5%99%A8%E4%B9%8B--MVC/eagleRecordings-MVC/eagleRecordings-MVC/Controller/FolderViewController.swift"
-                  timestampString = "557057574.141993"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "4522">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

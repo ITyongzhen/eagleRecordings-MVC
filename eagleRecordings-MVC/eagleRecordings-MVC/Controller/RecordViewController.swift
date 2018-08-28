@@ -53,8 +53,8 @@ class RecordViewController: UIViewController,AVAudioRecorderDelegate {
             }else{
                 self.recording.deleted()
             }
-            self.dismiss(animated: true, completion: nil)
-            
+//            self.dismiss(animated: true, completion: nil)
+            self.navigationController?.popViewController(animated: true)
         }
 
     }
