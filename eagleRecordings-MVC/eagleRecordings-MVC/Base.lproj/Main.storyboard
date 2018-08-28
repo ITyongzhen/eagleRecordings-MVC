@@ -91,7 +91,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
-                        <segue destination="ehn-tF-f11" kind="showDetail" id="zKt-JK-Ymf"/>
+                        <segue destination="ehn-tF-f11" kind="showDetail" identifier="showPlayer" id="zKt-JK-Ymf"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zvc-KZ-rxL" userLabel="First Responder" sceneMemberID="firstResponder"/>

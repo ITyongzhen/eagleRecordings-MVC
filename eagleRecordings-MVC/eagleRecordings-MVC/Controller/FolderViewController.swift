@@ -118,6 +118,19 @@ class FolderViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        folder.remove(folder.contents[indexPath.row])
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = PlayViewController()
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 fileprivate extension String {
     static let uuidPathKey = "uuidPath"
